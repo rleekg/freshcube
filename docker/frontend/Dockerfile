@@ -10,5 +10,7 @@ RUN groupadd --gid 1000 user \
 USER user
 WORKDIR /app
 
+EXPOSE 5173
+
 # Запускаем приложение
 CMD ["npm", "run", "dev"]
