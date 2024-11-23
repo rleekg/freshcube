@@ -7,7 +7,7 @@ import CreateContact from "@/components/CreateContact.vue";
 const leads = ref([]);
 
 const loadData = async () => {
-  await  axios.get('http://localhost/api/leads')
+  await  axios.get('https://rodent-guided-primarily.ngrok-free.app/api/leads')
     .then(function (response) {
       leads.value = response.data
       // handle success
